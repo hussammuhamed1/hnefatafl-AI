@@ -2,7 +2,7 @@
 from board import print_board, ATTACKER, DEFENDER
 from moves import is_valid_move, make_move
 from capture import capture_after_move, king_escaped, king_captured
-from M3 import get_ai_move
+from AI import get_ai_move
 
 def switch_turn(state):
     if state.turn == ATTACKER:

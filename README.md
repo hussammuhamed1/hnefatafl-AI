@@ -1,6 +1,6 @@
 # Hnefatafl
 
-A simple Python implementation of the Viking board game Hnefatafl on a 9x9 board.
+A simple Python implementation of the Viking board game Hnefatafl on a 9x9 board, featuring human vs AI gameplay.
 
 ## Overview
 
@@ -24,13 +24,15 @@ python main.py
 
 ## How to Play
 
-1. The board is printed in the console.
-2. Players alternate turns starting with the attackers.
-3. Enter the source row and column, then the destination row and column for your move.
-4. Pieces move in straight lines along rows or columns, and cannot jump over other pieces.
-5. Captures occur automatically when an enemy piece is trapped between two friendly pieces or against special squares.
-6. The defenders win if the king reaches any corner square.
-7. The attackers win if the king is fully surrounded and captured.
+1. Choose whether to play as Attackers (A) or Defenders (D).
+2. Select AI difficulty: easy, medium, or hard.
+3. The board is printed in the console.
+4. Players alternate turns starting with the attackers.
+5. On your turn, enter the source row and column, then the destination row and column for your move.
+6. Pieces move in straight lines along rows or columns, and cannot jump over other pieces.
+7. Captures occur automatically when an enemy piece is trapped between two friendly pieces or against special squares.
+8. The defenders win if the king reaches any corner square.
+9. The attackers win if the king is fully surrounded and captured.
 
 ## Project Files
 
@@ -40,6 +42,7 @@ python main.py
 - `controller.py` — Main game loop, input handling, turn switching, and win detection.
 - `moves.py` — Move validation and piece movement logic.
 - `capture.py` — Capture detection, king escape, and king capture rules.
+- `AI.py` — AI opponent with difficulty levels.
 - `utils.py` — Helper functions for board coordinate checks.
 
 ## Notes
