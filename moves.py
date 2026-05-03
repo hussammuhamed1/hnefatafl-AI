@@ -1,4 +1,4 @@
-from board import EMPTY, ATTACKER, DEFENDER, KING
+from board import EMPTY, ATTACKER, DEFENDER, KING, THRONE, CORNERS
 from utils import inside
 
 
@@ -28,6 +28,10 @@ def is_valid_move(board, r1,c1,r2,c2, turn):
     if r1 != r2 and c1 != c2:
         return False
 
+    if piece != KING:
+        if (r2, c2) == THRONE or (r2, c2) in CORNERS:
+            return False
+        
     # path clear
     if r1 == r2:
         step = 1 if c2 > c1 else -1
