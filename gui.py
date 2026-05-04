@@ -4,7 +4,7 @@ from board import create_board, ATTACKER, DEFENDER, KING
 from state import GameState
 from moves import is_valid_move, make_move, piece_belongs
 from capture import capture_after_move, king_escaped, king_captured
-from M3 import get_ai_move
+from AI import get_ai_move
 
 # --- CONSTANTS ---
 WIDTH, HEIGHT = 720, 720
